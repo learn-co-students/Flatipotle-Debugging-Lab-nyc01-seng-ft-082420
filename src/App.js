@@ -6,7 +6,7 @@ import Order from './components/Order'
 class App extends Component {
   state = {
     orders: [],
-    sides: ""
+    sides: "",
   }
 
   addOrder = (order) => {
@@ -17,7 +17,7 @@ class App extends Component {
 
   render() {
     const orders = this.state.orders.map( (order, idx) => {
-      <Order key={idx} {...order} Side={this.state.sides} />
+      <Order key={idx} order={order} Side={this.state.sides} />
     })
 
     return (
