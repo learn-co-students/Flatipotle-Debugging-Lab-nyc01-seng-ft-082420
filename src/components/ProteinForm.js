@@ -1,11 +1,6 @@
 import React, { Fragment } from 'react'
 
 const ProteinForm = (props) => {
-
-  // function checkProteinBox(){
-  //   props.protein()
-  // }
-
   return (
     <Fragment>
       <h1><label htmlFor="protein">Protein</label></h1>
@@ -18,7 +13,6 @@ const ProteinForm = (props) => {
               value="Barbacoa"
               name="protein"
               checked={ props.protein.includes('Barbacoa') }
-              // checked={checkProteinBox}
               onChange={ props.handleChange }
             />
             <img src={ require('../images/protein/barbacoa.png') } height="100px" width="100px" alt="barbacoa" />
