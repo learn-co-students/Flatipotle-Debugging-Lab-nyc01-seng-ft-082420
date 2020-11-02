@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
 import './App.css'
-import Form from './Form'
-import Order from './Order'
+import Form from './components/Form'
+import Order from './components/Order'
 
 class App extends Component {
-  state: {
-    orders: []
+  constructor(){
+    super()
+    this.state = {
+        orders: []
+    }
   }
+
 
   addOrder = (order) => {
     this.setState({
