@@ -6,13 +6,13 @@ import Order from './components/Order'
 class App extends Component {
   state = {
     orders: [],
+    sides: []
   }
 
   addOrder = (order) => {
     this.setState({
       orders: this.state.orders.concat(order)
     })
-    // console.log("hi")
   }
 
   render() {
